@@ -1,9 +1,7 @@
-// Fix for "Cannot find type definition file for 'vite/client'"
-// and "Cannot redeclare block-scoped variable 'process'"
+/// <reference types="vite/client" />
 
 declare namespace NodeJS {
   interface ProcessEnv {
     API_KEY: string;
-    [key: string]: string | undefined;
   }
 }
