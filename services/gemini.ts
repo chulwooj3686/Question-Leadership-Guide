@@ -93,7 +93,7 @@ const createPrompt = (data: FormData): string => {
 
 export const generateQuestions = async (formData: FormData): Promise<QuestionStep[]> => {
   const prompt = createPrompt(formData);
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
   
   try {
     const response = await ai.models.generateContent({

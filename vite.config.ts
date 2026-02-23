@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     define: {
       // Vercel의 Environment Variable을 process.env.API_KEY로 접근할 수 있게 매핑
-      'process.env.API_KEY': JSON.stringify(env.API_KEY),
+      'process.env.GEMINI_API_KEY': JSON.stringify(process.env.GEMINI_API_KEY || env.GEMINI_API_KEY),
     },
   };
 });

@@ -1,7 +1,7 @@
 import { QuestionResult } from "../types";
 
 // 사용자가 제공한 Google Apps Script Web App URL
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyUWaBKipdTRprYgn_DxmuLfZL2jtnI6xdSXj3uOetdw5XXDhT5wYt_Cr4GE_FDEoOk/exec"; 
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx2ojrosaCtqcCVZdXrQKpeEUwzzLR82RTTNst_PS-lXx2QxEYmhfEi1lweN4fpp-6b/exec"; 
 
 export const saveToSpreadsheet = async (result: QuestionResult): Promise<boolean> => {
   if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL.includes("YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE")) {

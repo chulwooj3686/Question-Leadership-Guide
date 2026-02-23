@@ -3,7 +3,7 @@ import { INITIAL_FORM_DATA } from './constants';
 import { FormData, QuestionResult } from './types';
 import { QuestionForm } from './components/QuestionForm';
 import { ResultDisplay } from './components/ResultDisplay';
-import { generateQuestions } from './services/geminiService';
+import { generateQuestions } from './services/gemini';
 import { saveToSpreadsheet } from './services/sheetService';
 import { Sparkles, ChevronRight, ChevronLeft, RefreshCcw, Loader2, Save, CheckCircle2 } from 'lucide-react';
 
